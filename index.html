@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VÉLORA is a modern fashion store featuring premium streetwear and everyday essentials."
+    >
+
+    <title>VÉLORA | Modern Essentials</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a href="#" class="logo">VÉLORA</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="search-btn" aria-label="Search">
+                Search
+            </button>
+
+            <button class="wishlist-btn" aria-label="Wishlist">
+                ♡
+            </button>
+
+            <button class="cart-btn" aria-label="Shopping cart">
+                Cart <span class="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">NEW SEASON / 2026</p>
+
+                <h1>
+                    Designed for
+                    <span>everyday.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Premium essentials made for people who
+                    care about simplicity, quality and style.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn btn-primary">
+                        Shop Collection
+                    </a>
+
+                    <a href="#collections" class="btn btn-secondary">
+                        Explore
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/hero.jpg"
+                    alt="VÉLORA fashion collection"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED CATEGORIES -->
+        <section class="categories" id="collections">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SHOP BY CATEGORY</p>
+
+                <h2>Find your style.</h2>
+
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#shop" class="category-card">
+                    <img
+                        src="images/category-men.jpg"
+                        alt="Men's fashion"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Men</h3>
+                        <span>Shop now →</span>
+                    </div>
+                </a>
+
+
+                <a href="#shop" class="category-card">
+                    <img
+                        src="images/category-women.jpg"
+                        alt="Women's fashion"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Women</h3>
+                        <span>Shop now →</span>
+                    </div>
+                </a>
+
+
+                <a href="#shop" class="category-card">
+                    <img
+                        src="images/category-accessories.jpg"
+                        alt="Fashion accessories"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <span>Shop now →</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SHOP -->
+        <section class="shop-section" id="shop">
+
+            <div class="section-heading shop-heading">
+
+                <div>
+                    <p class="eyebrow">THE COLLECTION</p>
+                    <h2>Best sellers.</h2>
+                </div>
+
+                <div class="shop-controls">
+
+                    <button class="filter-btn active" data-category="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-category="men">
+                        Men
+                    </button>
+
+                    <button class="filter-btn" data-category="women">
+                        Women
+                    </button>
+
+                    <button class="filter-btn" data-category="accessories">
+                        Accessories
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-container">
+
+                <label for="product-search">
+                    Search products
+                </label>
+
+                <input
+                    type="search"
+                    id="product-search"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+            <div class="product-grid" id="product-grid">
+
+                <!-- PRODUCT 1 -->
+                <article
+                    class="product-card"
+                    data-category="men"
+                    data-name="Essential Oversized Tee"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            New
+                        </span>
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Essential Oversized Tee to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-1.jpg"
+                            alt="Essential oversized black t-shirt"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Men
+                        </p>
+
+                        <h3>
+                            Essential Oversized Tee
+                        </h3>
+
+                        <p class="product-price">
+                            $45.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article
+                    class="product-card"
+                    data-category="women"
+                    data-name="Minimal Ribbed Top"
+                >
+
+                    <div class="product-image">
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Minimal Ribbed Top to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-2.jpg"
+                            alt="Minimal ribbed women's top"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Women
+                        </p>
+
+                        <h3>
+                            Minimal Ribbed Top
+                        </h3>
+
+                        <p class="product-price">
+                            $52.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article
+                    class="product-card"
+                    data-category="men"
+                    data-name="Relaxed Cargo Pants"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            Popular
+                        </span>
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Relaxed Cargo Pants to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-3.jpg"
+                            alt="Relaxed cargo pants"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Men
+                        </p>
+
+                        <h3>
+                            Relaxed Cargo Pants
+                        </h3>
+
+                        <p class="product-price">
+                            $78.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article
+                    class="product-card"
+                    data-category="women"
+                    data-name="Everyday Knit Dress"
+                >
+
+                    <div class="product-image">
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Everyday Knit Dress to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-4.jpg"
+                            alt="Everyday knit dress"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Women
+                        </p>
+
+                        <h3>
+                            Everyday Knit Dress
+                        </h3>
+
+                        <p class="product-price">
+                            $89.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+                <article
+                    class="product-card"
+                    data-category="accessories"
+                    data-name="Classic Leather Bag"
+                >
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            New
+                        </span>
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Classic Leather Bag to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-5.jpg"
+                            alt="Classic leather handbag"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h3>
+                            Classic Leather Bag
+                        </h3>
+
+                        <p class="product-price">
+                            $110.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+                <article
+                    class="product-card"
+                    data-category="accessories"
+                    data-name="Signature Cap"
+                >
+
+                    <div class="product-image">
+
+                        <button
+                            class="wishlist-icon"
+                            aria-label="Add Signature Cap to wishlist"
+                        >
+                            ♡
+                        </button>
+
+                        <img
+                            src="images/product-6.jpg"
+                            alt="Signature fashion cap"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h3>
+                            Signature Cap
+                        </h3>
+
+                        <p class="product-price">
+                            $35.00
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMO -->
+        <section class="promo-section">
+
+            <div class="promo-content">
+
+                <p class="eyebrow">
+                    VÉLORA ESSENTIALS
+                </p>
+
+                <h2>
+                    Less noise.
+                    <br>
+                    More style.
+                </h2>
+
+                <p>
+                    Timeless pieces designed to become
+                    part of your everyday wardrobe.
+                </p>
+
+                <a href="#shop" class="btn btn-primary">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="images/about.jpg"
+                    alt="VÉLORA clothing collection"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    OUR STORY
+                </p>
+
+                <h2>
+                    Style without
+                    compromise.
+                </h2>
+
+                <p>
+                    VÉLORA was created around one simple idea:
+                    great clothing should feel effortless.
+                </p>
+
+                <p>
+                    We focus on clean silhouettes, quality
+                    materials and timeless pieces that work
+                    beyond a single season.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    Learn more →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+
+            <div class="newsletter-content">
+
+                <p class="eyebrow">
+                    STAY IN THE LOOP
+                </p>
+
+                <h2>
+                    Get the latest from VÉLORA.
+                </h2>
+
+                <p>
+                    New collections, exclusive releases and
+                    special offers.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    VÉLORA
+                </a>
+
+                <p>
+                    Modern essentials for everyday living.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="#shop">Men</a>
+                <a href="#shop">Women</a>
+                <a href="#shop">Accessories</a>
+                <a href="#shop">New arrivals</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Help</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Follow</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 VÉLORA. All rights reserved.
+            </p>
+
+            <p>
+                Designed & developed with passion.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CART SIDEBAR -->
+    <aside
+        class="cart-sidebar"
+        aria-label="Shopping cart"
+    >
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button
+                class="close-cart"
+                aria-label="Close shopping cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong>
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="cart-overlay"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
